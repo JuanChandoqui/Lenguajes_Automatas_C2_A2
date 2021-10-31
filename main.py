@@ -1,25 +1,23 @@
 import sys
 from PyQt5.QtWidgets import QApplication, QMainWindow
-from PyQt5 import uic 
+from PyQt5 import uic
+
+from Models.evaluate_expression import match_expression 
 
 
 class Window(QMainWindow):
     def __init__(self):
         super().__init__()
         uic.loadUi('Views/main.ui', self) 
-        self.button_import_regular_expression.clicked.connect(self.importRegularExpression)
         self.button_evaluate.clicked.connect(self.evaluateExpression)
         self.button_exit.clicked.connect(self.close)
     
-    def importRegularExpression(self):
-        regular_expression = self.input_regular_expression.text()
-        print(regular_expression)
-
     def evaluateExpression(self):
+        regular_expression = self.input_regular_expression.text()
         expression = self.input_value.text()
         print(expression)
 
-        status = True #or False
+        status = match_expression(regular_expression, expression)
 
         if (status):
             self.label_status.setText('VALIDATE EXPRESSION!')

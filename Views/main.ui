@@ -7,7 +7,7 @@
     <x>0</x>
     <y>0</y>
     <width>883</width>
-    <height>456</height>
+    <height>464</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -24,7 +24,7 @@
     <property name="geometry">
      <rect>
       <x>420</x>
-      <y>320</y>
+      <y>290</y>
       <width>93</width>
       <height>28</height>
      </rect>
@@ -61,7 +61,7 @@ font: 75 12pt &quot;MS Shell Dlg 2&quot;;</string>
     <property name="geometry">
      <rect>
       <x>340</x>
-      <y>270</y>
+      <y>240</y>
       <width>241</width>
       <height>31</height>
      </rect>
@@ -83,7 +83,7 @@ font: 75 12pt &quot;MS Shell Dlg 2&quot;;</string>
     <property name="geometry">
      <rect>
       <x>380</x>
-      <y>370</y>
+      <y>340</y>
       <width>171</width>
       <height>31</height>
      </rect>
@@ -125,28 +125,11 @@ font: 10pt &quot;MS Shell Dlg 2&quot;;</string>
      <string>Ejemplo: (a+b)(c)</string>
     </property>
    </widget>
-   <widget class="QPushButton" name="button_import_regular_expression">
-    <property name="geometry">
-     <rect>
-      <x>410</x>
-      <y>140</y>
-      <width>93</width>
-      <height>28</height>
-     </rect>
-    </property>
-    <property name="styleSheet">
-     <string notr="true">background-color: rgb(170, 170, 0);
-color: rgb(255, 255, 255);</string>
-    </property>
-    <property name="text">
-     <string>IMPORT</string>
-    </property>
-   </widget>
    <widget class="QLabel" name="label_title_2">
     <property name="geometry">
      <rect>
       <x>350</x>
-      <y>230</y>
+      <y>200</y>
       <width>231</width>
       <height>31</height>
      </rect>
